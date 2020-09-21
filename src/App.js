@@ -1,10 +1,10 @@
 import React from 'react';
+import Form from './Components/Form';
 
 export default function App() {
 	return (
 		<>
-			<button>Test</button>
-			<h1>Boiler Template</h1>
+			<Form/>
 		</>
 	);
 }
