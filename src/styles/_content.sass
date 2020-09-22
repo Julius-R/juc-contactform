@@ -1,4 +1,88 @@
 
 .contact
     height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 2rem
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% )
+    .notification
+        position: absolute
+        top: -150px
+        right: 10px
+        border: none
+        background-image: linear-gradient(to top, #dfe9f3 0%, white 100%)
+        border-radius: 10px
+        width: 300px
+        height: auto
+        padding: $gutter
+    .form
+        max-width: 500px
+        max-height: 400px
+        width: 100%
+        border-radius: 5px
+        padding: 1rem
+        background-image: linear-gradient(to top, #ffffff 0%, white 100%)
+        .title
+            font-size: 2rem
+            text-align: center
+            margin-bottom: 1rem
+        &__area
+            margin-bottom: 1rem
+            label
+                display: block
+            input
+                border: none
+                background-color: #f0f4f8
+                font-family: inherit
+                border-radius: 5px
+                width: 100%
+                padding: .5rem
+                margin: .25rem 0                    
+            #clear
+                background-color: #ff4b5c
+            #submit
+                background-color: #28df99
+            .error 
+                color: red
+                font-size: .8rem
+        .check
+            display: inline
+            input
+                width: auto
+            p
+                display: inline
+                margin-left: .5rem
+        .btns
+            margin-top: 1rem
+            display: flex
+            justify-content: flex-end
+            input
+                margin: 0 .6rem
+                max-width: 120px
+                color: #ffffff
+                font-size: 1.2rem
+                
+
+    
+#slide-bottom
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@-webkit-keyframes slide-bottom 
+    0% 
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+  
+    100% 
+        -webkit-transform: translateY(160px)
+        transform: translateY(160px)
+
+@keyframes slide-bottom 
+    0% 
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+  
+    100% 
+        -webkit-transform: translateY(160px)
+        transform: translateY(160px)
